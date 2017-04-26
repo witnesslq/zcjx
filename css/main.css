@@ -2,6 +2,11 @@ body {
     font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
 }
 
+.gray-bg {
+    background-color: #f5f5f5;
+}
+.mb-50{margin-bottom: 55px;}
+
 .container {
     width: 1000px;
     padding: 0;
@@ -70,59 +75,73 @@ body {
     background-color: #3c3c3c;
     color: #8a8a8a;
 }
-.m-footer .top{
+
+.m-footer .top {
     padding-bottom: 14px;
-    border-bottom:1px solid #686868;
+    border-bottom: 1px solid #686868;
 }
-.m-footer .center{
+
+.m-footer .center {
     margin: 18px 0 27px 0;
 }
-.m-footer .center .out-link{
+
+.m-footer .center .out-link {
     margin: 0;
     display: inline-block;
 }
-.m-footer .center .out-link li{
+
+.m-footer .center .out-link li {
     padding: 0 12px;
 }
-.m-footer .center .out-link li:first-child{
+
+.m-footer .center .out-link li:first-child {
     padding-left: 0;
 }
-.m-footer .center .out-link a{
-    color:#8a8a8a;
+
+.m-footer .center .out-link a {
+    color: #8a8a8a;
     text-decoration: none;
 }
-.m-footer .center .out-link a:hover{
-    color:#efefef;
+
+.m-footer .center .out-link a:hover {
+    color: #efefef;
 }
-.m-footer .bottom{
+
+.m-footer .bottom {
     height: 40px;
     line-height: 40px;
     background-color: #2c2c2c;
     text-align: center;
 }
-.m-footer .bottom .link{
+
+.m-footer .bottom .link {
     display: inline-block;
     margin: 0 0 0 8px;
 }
-.m-footer .bottom .link li{
+
+.m-footer .bottom .link li {
     position: relative;
     padding: 0 6px;
 }
-.m-footer .bottom .link li a{
-    color:#8a8a8a;
+
+.m-footer .bottom .link li a {
+    color: #8a8a8a;
     text-decoration: none;
 }
-.m-footer .bottom .link li a:hover{
-    color:#efefef;
+
+.m-footer .bottom .link li a:hover {
+    color: #efefef;
 }
-.m-footer .bottom .link li:after{
+
+.m-footer .bottom .link li:after {
     content: "|";
     position: absolute;
-    left:-4px;
-    top:0;
+    left: -4px;
+    top: 0;
 }
-.m-footer .bottom .link li:first-child:after{
-    content:"";
+
+.m-footer .bottom .link li:first-child:after {
+    content: "";
 }
 
 .m-footer .tel-email {
@@ -155,35 +174,45 @@ body {
     padding: 0 25px 0 25px;
     vertical-align: top;
 }
-.m-footer .inner-link .list-inline li dl{
+
+.m-footer .inner-link .list-inline li dl {
     margin-bottom: 0;
 }
-.m-footer .inner-link .list-inline li dt{
-    color:#efefef;
+
+.m-footer .inner-link .list-inline li dt {
+    color: #efefef;
     font-weight: normal;
     line-height: 26px;
 }
-.m-footer .inner-link .list-inline li dd{
+
+.m-footer .inner-link .list-inline li dd {
     line-height: 26px;
 }
-.m-footer .inner-link .list-inline li a{
-    color:#686868;
+
+.m-footer .inner-link .list-inline li a {
+    color: #686868;
     text-decoration: none;
 }
-.m-footer .inner-link .list-inline li a:hover{
-    color:#efefef;
+
+.m-footer .inner-link .list-inline li a:hover {
+    color: #efefef;
 }
-.m-footer .inner-link .two-bar-codes{
+
+.m-footer .inner-link .two-bar-codes {
     position: absolute;
-    top:0;
-    right:0;
-    width:112px;
+    top: 0;
+    right: 0;
+    width: 112px;
     height: 116px;
     background: url("../imgs/two_code.png") no-repeat center center;
 }
 
-    /*尾部footer结束*/
+/*尾部footer结束*/
 /*导航nav开始*/
+.m-nav {
+    background-color: #fff;
+}
+
 .m-nav .logo {
     height: 80px;
     padding-top: 15px;
@@ -240,6 +269,95 @@ body {
 }
 
 /*导航nav结束*/
+/*内页导航开始*/
+.m-innernav {
+    margin-bottom: 0;
+    width: 235px;
+}
+
+.m-innernav dt {
+    position: relative;
+    z-index: 100;
+    height: 104px;
+    line-height: 104px;
+    text-align: center;
+    color: #fff;
+    background-color: #c8000c;
+    font-size: 22px;
+}
+
+.m-innernav a {
+    position: relative;
+    display: block;
+    padding-left: 82px;
+    text-decoration: none;
+    color: #333;
+    height: 74px;
+    line-height: 74px;
+    background-color: #f1f1f1;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+    border-right: none;
+    font-size: 16px;
+}
+
+.m-innernav a:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 7px;
+    top: 35px;
+    right: 25px;
+    background: url("../imgs/arrow.png") no-repeat center center;
+}
+
+.m-innernav dd:hover a, .m-innernav dd.active a {
+    background-color: #fff;
+}
+
+.m-innernav dd:hover a:after, .m-innernav dd.active a:after {
+    background: url("../imgs/arraw_hover.png") no-repeat center center;
+}
+
+/*内页导航结束*/
+/*内页内容区开始*/
+.m-inner-content {
+    padding: 25px;
+    position: relative;
+    z-index: 99;
+    width: 765px;
+    min-height: 548px;
+    background-color: #fff;
+    box-shadow: -5px 0px 5px 0 #f3f2f2;
+}
+
+.m-inner-content .title {
+    padding: 13px 0 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.m-inner-content .title h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.m-inner-content .title p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*内页内容区结束*/
+/*内页横幅开始*/
+.m-banner {
+    height: 349px;
+    background: url("../imgs/banner03.png") no-repeat center center;
+    margin-bottom: 30px;
+}
+
+/*内页横幅结束*/
 /*首页样式开始*/
 .home-banner-one {
     position: relative;
@@ -637,3 +755,85 @@ body {
 }
 
 /*首页样式结束*/
+/*走进中传-企业简介开始*/
+.company-profile-content .h4 {
+    margin: 28px 0 10px 0;
+    color: #e1160c;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.company-profile-content .p{
+    text-indent: 2em;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+.company-profile-content .h5{
+    margin: 0 0 10px 0;
+    color:#c8000c;
+    font-size:16px;
+    font-weight: bold;
+}
+.company-profile-content .img{
+    margin: 20px 0;
+    display: block;
+}
+
+/*走进中传-企业简介结束*/
+/*走进中传-董事长简介开始*/
+.chairman-profile-content .avatar-box{
+padding: 30px 0  15px 0;
+}
+.chairman-profile-content .avatar-box .pull-right{
+    width:490px;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+.chairman-profile-content .p{
+    margin-bottom: 0;
+    text-indent: 2em;
+    font-size: 16px;
+    line-height:28px ;
+}
+/*走进中传-董事长简介结束*/
+/*走进中传-旗下媒体开始*/
+.lts-media-content{
+    padding-bottom: 100px;
+}
+.lts-media-content .h4{
+    font-size: 16px;
+    color:#e1160c;
+    margin:30px 0 12px 0;
+    font-weight: bold;
+}
+.lts-media-content .p{
+    margin-bottom: 0;
+    line-height: 24px;
+    text-indent: 2em;
+}
+/*走进中传-旗下媒体结束*/
+/*走进中传-发展历程开始*/
+.development-path-content{
+    padding-bottom: 100px;
+}
+.development-path-content .h4{
+    font-size: 16px;
+    color:#e1160c;
+    margin:30px 0 12px 0;
+    font-weight: bold;
+}
+.development-path-content .p{
+    margin-bottom: 0;
+    line-height: 24px;
+    text-indent: 2em;
+}
+/*走进中传-发展历程结束*/
+/*走进中传-企业文化开始*/
+.company-culture-content{
+    padding-bottom: 200px;
+}
+.company-culture-content .img{
+    display: block;
+    margin: 30px 0 30px 0;
+}
+/*走进中传-企业文化结束*/
