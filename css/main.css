@@ -5,7 +5,10 @@ body {
 .gray-bg {
     background-color: #f5f5f5;
 }
-.mb-50{margin-bottom: 55px;}
+
+.mb-50 {
+    margin-bottom: 55px;
+}
 
 .container {
     width: 1000px;
@@ -320,6 +323,45 @@ body {
 }
 
 /*内页导航结束*/
+/*分页标签开始*/
+.m-page-controls {
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.m-page-controls li {
+    padding: 0 3px;
+}
+
+.m-page-controls a {
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+}
+
+.m-page-controls li.active a, .m-page-controls li a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.m-page-controls span {
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/*分页标签结束*/
 /*内页内容区开始*/
 .m-inner-content {
     padding: 25px;
@@ -763,77 +805,331 @@ body {
     font-size: 20px;
 
 }
-.company-profile-content .p{
+
+.company-profile-content .p {
     text-indent: 2em;
     margin-bottom: 0;
     line-height: 24px;
 }
-.company-profile-content .h5{
+
+.company-profile-content .h5 {
     margin: 0 0 10px 0;
-    color:#c8000c;
-    font-size:16px;
+    color: #c8000c;
+    font-size: 16px;
     font-weight: bold;
 }
-.company-profile-content .img{
+
+.company-profile-content .img {
     margin: 20px 0;
     display: block;
 }
 
 /*走进中传-企业简介结束*/
 /*走进中传-董事长简介开始*/
-.chairman-profile-content .avatar-box{
-padding: 30px 0  15px 0;
+.chairman-profile-content .avatar-box {
+    padding: 30px 0 15px 0;
 }
-.chairman-profile-content .avatar-box .pull-right{
-    width:490px;
+
+.chairman-profile-content .avatar-box .pull-right {
+    width: 490px;
     padding-top: 18px;
     padding-left: 20px;
 }
-.chairman-profile-content .p{
+
+.chairman-profile-content .p {
     margin-bottom: 0;
     text-indent: 2em;
     font-size: 16px;
-    line-height:28px ;
+    line-height: 28px;
 }
+
 /*走进中传-董事长简介结束*/
 /*走进中传-旗下媒体开始*/
-.lts-media-content{
+.lts-media-content {
     padding-bottom: 100px;
 }
-.lts-media-content .h4{
+
+.lts-media-content .h4 {
     font-size: 16px;
-    color:#e1160c;
-    margin:30px 0 12px 0;
+    color: #e1160c;
+    margin: 30px 0 12px 0;
     font-weight: bold;
 }
-.lts-media-content .p{
+
+.lts-media-content .p {
     margin-bottom: 0;
     line-height: 24px;
     text-indent: 2em;
 }
+
 /*走进中传-旗下媒体结束*/
 /*走进中传-发展历程开始*/
-.development-path-content{
+.development-path-content {
     padding-bottom: 100px;
 }
-.development-path-content .h4{
+
+.development-path-content .h4 {
     font-size: 16px;
-    color:#e1160c;
-    margin:30px 0 12px 0;
+    color: #e1160c;
+    margin: 30px 0 12px 0;
     font-weight: bold;
 }
-.development-path-content .p{
+
+.development-path-content .p {
     margin-bottom: 0;
     line-height: 24px;
     text-indent: 2em;
 }
+
 /*走进中传-发展历程结束*/
 /*走进中传-企业文化开始*/
-.company-culture-content{
+.company-culture-content {
     padding-bottom: 200px;
 }
-.company-culture-content .img{
+
+.company-culture-content .img {
     display: block;
     margin: 30px 0 30px 0;
 }
+
 /*走进中传-企业文化结束*/
+/*新闻资讯-集团要闻开始*/
+.group-news-content .news-list {
+    margin: 0;
+}
+
+.group-news-content .news-list li {
+    padding: 0;
+    margin-top: 25px;
+}
+
+.group-news-content .news-list a {
+    display: block;
+    color: #333;
+}
+
+.group-news-content .news-list a img {
+    display: block;
+    border: 1px solid #ddd;
+}
+
+.group-news-content .news-list .con {
+    width: 543px;
+    padding: 0 20px;
+    color: #656464;
+}
+
+.group-news-content .news-list h4 {
+    margin: 5px 0 10px 0;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.group-news-content .news-list a:hover h4 {
+    color: #c8000c;
+}
+
+.group-news-content .news-list p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.group-news-content .news-list .des {
+    font-size: 12px;
+    color: #a56600;
+    text-indent: 2em;
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+/*新闻资讯-集团要闻结束*/
+/*新闻资讯-视频中心开始*/
+.video-center-content .video-list {
+    margin: 25px 0 0 0;
+}
+
+.video-center-content .video-list li {
+    margin-bottom: 15px;
+    padding: 0 7px;
+}
+
+.video-center-content .video-list a {
+    display: block;
+    text-decoration: none;
+}
+
+.video-center-content .video-list a img {
+    display: block;
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.video-center-content .video-list a p {
+    text-align: center;
+    margin: 8px 0 0 0;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
+.video-center-content .video-list a:hover p {
+    color: #c8000c;
+}
+
+/*新闻资讯-视频中心结束*/
+/*核心产业-文化传媒开始*/
+.culture-media-content .content {
+    padding-top: 12px;
+}
+
+.culture-media-content .p {
+    text-indent: 2em;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+
+.culture-media-content .h5 {
+    margin-bottom: 30px;
+    text-indent: 2em;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.culture-media-content .h5 .a {
+    color: #c8000c;
+    text-decoration: none;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+/*核心产业-文化传媒结束*/
+/*品牌项目-品牌项目开始*/
+.brand-project-content .video-list {
+    margin: 25px 0 0 0;
+}
+
+.brand-project-content .video-list li {
+    margin-bottom: 15px;
+    padding: 0 7px;
+}
+
+.brand-project-content .video-list a {
+    display: block;
+    text-decoration: none;
+}
+
+.brand-project-content .video-list a img {
+    display: block;
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.brand-project-content .video-list a p {
+    text-align: center;
+    margin: 8px 0 0 0;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
+.brand-project-content .video-list a:hover p {
+    color: #c8000c;
+}
+
+/*品牌项目-品牌项目结束*/
+/*招贤纳士-招贤纳士开始*/
+.careers-content .p {
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.careers-content .p:first-child {
+    margin-top: 10px;
+}
+
+.careers-content .p.tit {
+    font-weight: bold;
+}
+
+/*招贤纳士-招贤纳士结束*/
+/*联系我们-联系方式开始*/
+.contact-information-content .p {
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.contact-information-content .p:first-child{
+    margin-top: 10px;
+}
+
+/*联系我们-联系方式开始*/
+/*证书查询结果开始*/
+.zs-query-box{
+    box-shadow: 0 0 5px #eee;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding-bottom: 25px;
+}
+.zs-query-box .content{
+    margin: 25px;
+    border:1px solid #eee;
+}
+.zs-query-box h2{
+    margin: 0;
+    height: 78px;
+    line-height: 78px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #c8000c;
+    color:#fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.zs-query-box h3{
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size:24px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 70px;
+}
+.zs-query-box .info{
+    font-size: 16px;
+    margin: 0;
+}
+.zs-query-box .info li{
+    padding: 0;
+}
+.zs-query-box .info li .key{
+    display: inline-block;
+    vertical-align: middle;
+    width:220px;
+    text-align: right;
+    padding-right: 10px;
+    background-color: #dbdbdb;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.zs-query-box .info li .value{
+    padding-left: 15px;
+    display:inline-block;
+    vertical-align: middle;
+    width:728px;
+    border-bottom:1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+
+}
+/*证书查询结果结束*/
